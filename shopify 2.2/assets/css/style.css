@@ -1,0 +1,25 @@
+.imgnew{
+    aspect-ratio: 1;
+    object-fit: contain;
+}
+.img-test{
+    width: inherit;
+    aspect-ratio: 1;
+    object-fit: contain;
+}
+
+.product-img{
+    aspect-ratio: 1;
+    object-fit: contain;
+    width: 75px; 
+}
+
+.pos{
+    top: -0.5em;
+    right: 0;
+    width: 100%;
+    aspect-ratio: 1;
+    text-align: center;
+    font-weight: bolder;
+    color: white;
+}

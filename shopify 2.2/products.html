@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shopify</title>
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg  navbar-dark bg-primary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">shopify</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="products.html">products</a>
+              </li>
+            </ul>
+            <!-- <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form> -->
+          </div>
+        </div>
+      </nav>
+
+
+      <div class="container mt-3">
+        <div class="row">
+            <div class="col-12">
+                <h1>Add product</h1>
+                <hr>
+            </div>
+
+            <div class="col-12">
+                <form id="addform">
+                    <div class="mb-3">
+                        <label for="pname" class="form-label">product name</label>
+                        <input type="text" class="form-control" id="pname" placeholder="product name">
+                    </div>
+                    <div class="mb-3">
+                        <label for="price" class="form-label">product price</label>
+                        <input type="number" class="form-control" id="price" placeholder="product price">
+                    </div>
+                    <div class="mb-3">
+                        <label for="des" class="form-label">product des</label>
+                        <textarea id="des" class="form-control" rows="3"></textarea>
+                    </div>
+                    <div class="mb-3">
+                        <label for="img" class="form-label">product image</label>
+                        <input type="file" class="form-control" id="img" placeholder="product image">
+                    </div>
+                    <button type="submit" class="btn btn-primary">add product</button>
+                </form>
+            </div>
+<!--  -->
+            <div class="col-12 mt-5">
+              <h1>Products</h1>
+              <hr>
+          </div>
+          
+          <div class="col-12">
+            <table class="table table-hover">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>product name</th>
+                  <th>price</th>
+                  <th>des</th>
+                  <th>image</th>
+                  <th>action</th>
+                </tr>
+              </thead>
+              <tbody id="tbody">
+
+              </tbody>
+            </table>
+          </div>
+
+          <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Open modal for @mdo</button>
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@fat">Open modal for @fat</button>
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@getbootstrap">Open modal for @getbootstrap</button> -->
+          
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Update Product</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <input type="number" name="id" id="updateId" hidden>
+                 
+                  <form id="updateform">
+                    <div class="mb-3">
+                      <label for="" class="col-form-label">Product name :</label>
+                      <input type="text" class="form-control" id="update_name">
+                    </div>
+                    <div class="mb-3">
+                      <label for="message-text" class="col-form-label">Desc.:</label>
+                      <textarea class="form-control" id="update_Dec"></textarea>
+                    </div>
+                    <div class="mb-3">
+                      <label for="message-text" class="col-form-label">Price:</label>
+                      <input type="text" class="form-control" id="update_Price">
+                    </div>
+                    
+                    <div class="mb-3">
+                      <label for="" class="form-label">product image :</label>
+                      <input type="file" class="form-control" id="updateimgg" placeholder="Update product image">
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-primary" >Update </button>
+                  </div>
+                  <!--  -->
+                  </form>
+                </div>
+               
+              </div>
+            </div>
+          </div>
+
+
+
+        </div>
+      </div>
+    
+    <script src="bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/products.js"></script>
+</body>
+</html>
